@@ -23,6 +23,13 @@ namespace Day19RegularExpression
             string[] arr = { "Dixit" };
             TestPattern(pattern, arr);
         }
+        //Created email method-UC3
+        public static void email()
+        {
+            string pattern = "^[a-z]{3}.[a-z]{2,}@[a-z]{2}.[a-z]{2}.[a-z]{2}$";
+            string[] arr = { "abc.xyz@bl.co.in" };
+            TestPattern(pattern, arr);
+        }
         //Created Test pattern method
         public static void TestPattern(string pattern, string[] arr)
         {
