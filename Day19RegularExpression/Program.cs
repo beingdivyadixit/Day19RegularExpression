@@ -7,6 +7,7 @@ namespace Day19RegularExpression
         static void Main(string[] args)
         {
             Console.WriteLine(" Welcome To Regular Expression programs ");
+            RegularExpression.fisrtName();
         }
     }
 }
