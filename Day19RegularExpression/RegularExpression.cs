@@ -40,8 +40,8 @@ namespace Day19RegularExpression
         //Created password method-UC5,6
         public static void password()
         {
-            string pattern = "^[A-Z]{1}[a-z,0-9]{6,}[0-9]{1}$";
-            string[] arr = { "Abcdofo8", "Kjhfldo6" };
+            string pattern = "^[A-Z]{1}[a-z]{4,}(@|#|$|&){1}[0-9]{1,}$";
+            string[] arr = { "Akcdof@8", "Kjhfld@68" };
             TestPattern(pattern, arr);
         }
             //Created Test pattern method
