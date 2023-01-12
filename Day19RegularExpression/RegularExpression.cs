@@ -9,11 +9,18 @@ namespace Day19RegularExpression
 {
     internal class RegularExpression
     {
-        //Created first Name method
+        //Created first Name method-UC1
         public static void fisrtName()
         {
             string pattern = "^[A-Z]{1}[a-z]{2,}$";
             string[] arr = { "Divya" };
+            TestPattern(pattern, arr);
+        }
+        //Created last Name method-UC2
+        public static void lastName()
+        {
+            string pattern = "^[A-Z]{1}[a-z]{2,}$";
+            string[] arr = { "Dixit" };
             TestPattern(pattern, arr);
         }
         //Created Test pattern method
