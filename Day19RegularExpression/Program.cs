@@ -7,7 +7,7 @@ namespace Day19RegularExpression
         static void Main(string[] args)
         {
             Console.WriteLine(" Welcome To Regular Expression programs ");
-            Console.WriteLine("Enter-\n1:Create first name\n2:Create last name\n3:Create valid Email ID\n4:Create phone number with country code\n5:Create Passward Rule-1\n6:Create Passward Rule-2");
+            Console.WriteLine("Enter-\n1:Create first name\n2:Create last name\n3:Create valid Email ID\n4:Create phone number with country code\n5:Create Passward Rule-1\n6:Create Passward Rule-2\n7:Create Passward Rule-3");
             int option = Convert.ToInt32(Console.ReadLine());
             switch (option)
             {
@@ -33,6 +33,10 @@ namespace Day19RegularExpression
                     break;
                 case 6:
                     //UC-6
+                    RegularExpression.password();
+                    break;
+                case 7:
+                    //UC-7
                     RegularExpression.password();
                     break;
                 default:
