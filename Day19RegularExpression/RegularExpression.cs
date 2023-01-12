@@ -37,11 +37,18 @@ namespace Day19RegularExpression
             string[] arr = { "91 9919819801" };
             TestPattern(pattern, arr);
         }
-        //Created Test pattern method
-        public static void TestPattern(string pattern, string[] arr)
+        //Created password method
+        public static void password()
         {
-            foreach (string inputs in arr)
+            string pattern = "^[a-zA-Z]{8,}$";
+            string[] arr = { "abcdefgh", "kjhfgdhs" };
+            TestPattern(pattern, arr);
+        }
+            //Created Test pattern method
+            public static void TestPattern(string pattern, string[] arr)
             {
+             foreach (string inputs in arr)
+             {
                 if (Regex.IsMatch(inputs, pattern))
                 {
                     Console.WriteLine("{0} is valid", inputs);
@@ -50,7 +57,7 @@ namespace Day19RegularExpression
                 {
                     Console.WriteLine("{0} is invalid", inputs);
                 }
+             }
             }
-        }
     }
 }
