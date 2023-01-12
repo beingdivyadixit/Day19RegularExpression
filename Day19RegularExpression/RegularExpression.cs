@@ -30,6 +30,13 @@ namespace Day19RegularExpression
             string[] arr = { "abc.xyz@bl.co.in" };
             TestPattern(pattern, arr);
         }
+        //Created phone number method
+        public static void phoneNumber()
+        {
+            string pattern = "^[0-9]{2}[ ][0-9]{10}$";
+            string[] arr = { "91 9919819801" };
+            TestPattern(pattern, arr);
+        }
         //Created Test pattern method
         public static void TestPattern(string pattern, string[] arr)
         {
